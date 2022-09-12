@@ -8,8 +8,8 @@ SpeedControl::SpeedControl(int speedInPort, int minSpeed, int maxSpeed) {
 
 int SpeedControl::getSpeed() {
   //TODO
-  //  int speedPinValue = analogRead(SPEED_PIN);
-  //  return map(speedPinValue, 0, 1023, minSpeed_, maxSpeed_); 
+    int speedPinValue = analogRead(IN_SPEED_Y_PIN);
+    return map(speedPinValue, 0, 1023, minSpeed_, maxSpeed_); 
 
-  return maxSpeed_;
+//  return maxSpeed_;
 }

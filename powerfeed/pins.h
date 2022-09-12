@@ -6,7 +6,10 @@
 #define IN_SPEED_Y_PIN A0
 #define IN_LEFT_Y_PIN 5
 #define IN_RIGHT_Y_PIN 3
-#define MIN_STEP_DELAY_Y 100
+
+#define ON_BUTTON_PIN 7
+
+#define MIN_STEP_DELAY_Y 50
 
 #define DIR_1_VALUE HIGH
 #define DIR_2_VALUE LOW
