@@ -6,6 +6,8 @@
 #define IN_SPEED_Y_PIN A0
 #define IN_LEFT_Y_PIN 5
 #define IN_RIGHT_Y_PIN 3
+#define IN_LEFT_Y_LIMIT_PIN 6
+#define IN_RIGHT_Y_LIMIT_PIN 7
 
 #define ON_BUTTON_PIN 7
 

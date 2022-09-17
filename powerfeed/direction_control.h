@@ -2,8 +2,9 @@
 #define _H_DIRECTION_CONTROL_H_INCLUDED_
 
 #include "direction.h"
+#include "direction_source.h"
 
-class DirectionControl {
+class DirectionControl : public DirectionSource {
 private:
 
   int direction1Pin_;

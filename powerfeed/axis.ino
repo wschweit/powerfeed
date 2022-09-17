@@ -1,8 +1,8 @@
 #include "axis.h"
 
-Axis::Axis(String label, DirectionControl* directionControl, SpeedControl* speedControl, StepperMotor* stepperMotor) {
+Axis::Axis(String label, DirectionSource* directionSource, SpeedControl* speedControl, StepperMotor* stepperMotor) {
   label_ = label;
-  directionControl_ = directionControl;
+  directionSource_ = directionSource;
   speedControl_ = speedControl;
   stepperMotor_ = stepperMotor;
 }
@@ -14,7 +14,7 @@ void Axis::initialize() {
 void Axis::loop() {
 
   int speed = speedControl_->getSpeed();
-  Direction direction = directionControl_->getDirection();
+  Direction direction = directionSource_->getDirection();
 
   if(direction == Direction::NONE) {
     speed = 0;
